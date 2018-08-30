@@ -1,6 +1,6 @@
 <template>
   <view class="wxc-ttt">
-    <view>WxcTtt Component changed</view>
+    <view>WxcTtt Component changed!</view>
   </view>
 </template>
 

@@ -17,9 +17,9 @@
 16 silly hasTags
 17 verbose hasTags true
 18 silly getLastTag
-19 verbose getLastTag wxc-ttt@1.0.1
-20 info Comparing with wxc-ttt@1.0.1.
-21 silly diffSinceIn wxc-ttt@1.0.1 packages/wxc-ttt
+19 verbose getLastTag wxc-ttt@1.0.2
+20 info Comparing with wxc-ttt@1.0.2.
+21 silly diffSinceIn wxc-ttt@1.0.2 packages/wxc-ttt
 22 silly diff packages/wxc-ttt/src/index.wxc
 23 verbose updated wxc-ttt
 24 info Checking for prereleased packages...
@@ -36,12 +36,12 @@
 35 silly addFile /Users/daiwei/Public/practice/min/packages/wxc-ttt/package.json
 36 silly commit Publish by MinDev
 36 silly commit
-36 silly commit  - wxc-ttt@1.0.2
+36 silly commit  - wxc-ttt@1.0.3
 37 verbose commit [ 'commit',
 37 verbose commit   '--no-verify',
 37 verbose commit   '-F',
-37 verbose commit   '/private/var/folders/gx/drz33fyn0xx80yrj2fnpywfc0000gn/T/04fb07fb-2797-4788-b918-05a6c9ab1110/lerna-commit.txt' ]
-38 silly addTag wxc-ttt@1.0.2
+37 verbose commit   '/private/var/folders/gx/drz33fyn0xx80yrj2fnpywfc0000gn/T/f5bb3aa4-3fd9-486d-90cd-46bdca12be0a/lerna-commit.txt' ]
+38 silly addTag wxc-ttt@1.0.3
 39 silly runScriptSync postversion wxc-ttt
 40 silly runScriptSync postversion min
 41 info publish Publishing packages to npm...
@@ -71,24 +71,24 @@
 65 silly publishTaggedInDir latest wxc-ttt
 66 silly getExecOpts { cwd: '/Users/daiwei/Public/practice/min/packages/wxc-ttt' }
 67 error publish Ran out of retries while publishing wxc-ttt Error: Command failed: npm publish --tag latest
-67 error publish npm ERR! code ENEEDAUTH
-67 error publish npm ERR! need auth auth required for publishing
-67 error publish npm ERR! need auth You need to authorize this machine using `npm adduser`
+67 error publish npm ERR! publish Failed PUT 403
+67 error publish npm ERR! code E403
+67 error publish npm ERR! you must verify your email before publishing a new package: https://www.npmjs.com/email-edit : wxc-ttt
 67 error publish
 67 error publish npm ERR! A complete log of this run can be found in:
-67 error publish npm ERR!     /Users/daiwei/.npm/_logs/2018-08-30T08_01_03_166Z-debug.log
+67 error publish npm ERR!     /Users/daiwei/.npm/_logs/2018-08-30T08_03_18_064Z-debug.log
 67 error publish
 67 error publish     at Promise.all.then.arr (/Users/daiwei/.nvm/versions/node/v9.5.0/lib/node_modules/@mindev/min-cli/node_modules/execa/index.js:236:11)
 67 error publish     at <anonymous>
 67 error publish     at process._tickCallback (internal/process/next_tick.js:160:7)
 68 error execute callback with error
 69 error Error: Command failed: npm publish --tag latest
-69 error npm ERR! code ENEEDAUTH
-69 error npm ERR! need auth auth required for publishing
-69 error npm ERR! need auth You need to authorize this machine using `npm adduser`
+69 error npm ERR! publish Failed PUT 403
+69 error npm ERR! code E403
+69 error npm ERR! you must verify your email before publishing a new package: https://www.npmjs.com/email-edit : wxc-ttt
 69 error
 69 error npm ERR! A complete log of this run can be found in:
-69 error npm ERR!     /Users/daiwei/.npm/_logs/2018-08-30T08_01_03_166Z-debug.log
+69 error npm ERR!     /Users/daiwei/.npm/_logs/2018-08-30T08_03_18_064Z-debug.log
 69 error
 69 error     at Promise.all.then.arr (/Users/daiwei/.nvm/versions/node/v9.5.0/lib/node_modules/@mindev/min-cli/node_modules/execa/index.js:236:11)
 69 error     at <anonymous>

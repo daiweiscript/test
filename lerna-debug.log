@@ -17,12 +17,9 @@
 16 silly hasTags
 17 verbose hasTags true
 18 silly getLastTag
-19 verbose getLastTag wxc-scroll@1.0.2
-20 info Comparing with wxc-scroll@1.0.2.
-21 silly diffSinceIn wxc-scroll@1.0.2 packages/wxc-ttt
-22 silly diff packages/wxc-ttt/LICENSE
-22 silly diff packages/wxc-ttt/README.md
-22 silly diff packages/wxc-ttt/package.json
+19 verbose getLastTag wxc-ttt@1.0.1
+20 info Comparing with wxc-ttt@1.0.1.
+21 silly diffSinceIn wxc-ttt@1.0.1 packages/wxc-ttt
 22 silly diff packages/wxc-ttt/src/index.wxc
 23 verbose updated wxc-ttt
 24 info Checking for prereleased packages...
@@ -39,12 +36,12 @@
 35 silly addFile /Users/daiwei/Public/practice/min/packages/wxc-ttt/package.json
 36 silly commit Publish by MinDev
 36 silly commit
-36 silly commit  - wxc-ttt@1.0.1
+36 silly commit  - wxc-ttt@1.0.2
 37 verbose commit [ 'commit',
 37 verbose commit   '--no-verify',
 37 verbose commit   '-F',
-37 verbose commit   '/private/var/folders/gx/drz33fyn0xx80yrj2fnpywfc0000gn/T/93a5c03f-9567-49fa-ad56-31429219dbb0/lerna-commit.txt' ]
-38 silly addTag wxc-ttt@1.0.1
+37 verbose commit   '/private/var/folders/gx/drz33fyn0xx80yrj2fnpywfc0000gn/T/04fb07fb-2797-4788-b918-05a6c9ab1110/lerna-commit.txt' ]
+38 silly addTag wxc-ttt@1.0.2
 39 silly runScriptSync postversion wxc-ttt
 40 silly runScriptSync postversion min
 41 info publish Publishing packages to npm...
@@ -74,36 +71,24 @@
 65 silly publishTaggedInDir latest wxc-ttt
 66 silly getExecOpts { cwd: '/Users/daiwei/Public/practice/min/packages/wxc-ttt' }
 67 error publish Ran out of retries while publishing wxc-ttt Error: Command failed: npm publish --tag latest
-67 error publish npm ERR! publish Failed PUT 401
-67 error publish npm ERR! code E401
-67 error publish npm ERR! 404 unauthorized Login first: wxc-ttt
-67 error publish npm ERR! 404
-67 error publish npm ERR! 404  'wxc-ttt' is not in the npm registry.
-67 error publish npm ERR! 404 You should bug the author to publish it (or use the name yourself!)
-67 error publish npm ERR! 404
-67 error publish npm ERR! 404 Note that you can also install from a
-67 error publish npm ERR! 404 tarball, folder, http url, or git url.
+67 error publish npm ERR! code ENEEDAUTH
+67 error publish npm ERR! need auth auth required for publishing
+67 error publish npm ERR! need auth You need to authorize this machine using `npm adduser`
 67 error publish
 67 error publish npm ERR! A complete log of this run can be found in:
-67 error publish npm ERR!     /Users/daiwei/.npm/_logs/2018-08-30T03_00_55_735Z-debug.log
+67 error publish npm ERR!     /Users/daiwei/.npm/_logs/2018-08-30T08_01_03_166Z-debug.log
 67 error publish
 67 error publish     at Promise.all.then.arr (/Users/daiwei/.nvm/versions/node/v9.5.0/lib/node_modules/@mindev/min-cli/node_modules/execa/index.js:236:11)
 67 error publish     at <anonymous>
 67 error publish     at process._tickCallback (internal/process/next_tick.js:160:7)
 68 error execute callback with error
 69 error Error: Command failed: npm publish --tag latest
-69 error npm ERR! publish Failed PUT 401
-69 error npm ERR! code E401
-69 error npm ERR! 404 unauthorized Login first: wxc-ttt
-69 error npm ERR! 404
-69 error npm ERR! 404  'wxc-ttt' is not in the npm registry.
-69 error npm ERR! 404 You should bug the author to publish it (or use the name yourself!)
-69 error npm ERR! 404
-69 error npm ERR! 404 Note that you can also install from a
-69 error npm ERR! 404 tarball, folder, http url, or git url.
+69 error npm ERR! code ENEEDAUTH
+69 error npm ERR! need auth auth required for publishing
+69 error npm ERR! need auth You need to authorize this machine using `npm adduser`
 69 error
 69 error npm ERR! A complete log of this run can be found in:
-69 error npm ERR!     /Users/daiwei/.npm/_logs/2018-08-30T03_00_55_735Z-debug.log
+69 error npm ERR!     /Users/daiwei/.npm/_logs/2018-08-30T08_01_03_166Z-debug.log
 69 error
 69 error     at Promise.all.then.arr (/Users/daiwei/.nvm/versions/node/v9.5.0/lib/node_modules/@mindev/min-cli/node_modules/execa/index.js:236:11)
 69 error     at <anonymous>

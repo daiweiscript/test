@@ -1,0 +1,19 @@
+0 silly input [ 'publish' ]
+1 silly flags { exact: true, message: 'Publish by MinDev' }
+2 verbose rootPath /Users/daiwei/Public/practice/min
+3 silly isInitialized
+4 silly isInitialized true
+5 silly existsSync /Users/daiwei/Public/practice/min/VERSION
+6 silly initialize attempt
+7 silly isDetachedHead
+8 silly getCurrentBranch
+9 error initialize caught error
+10 error Error: fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.
+10 error Use '--' to separate paths from revisions, like this:
+10 error 'git <command> [<revision>...] -- [<file>...]'
+10 error
+10 error     at Function.module.exports.sync (/Users/daiwei/.nvm/versions/node/v9.5.0/lib/node_modules/@mindev/min-cli/node_modules/execa/index.js:303:26)
+10 error     at Function.execSync (/Users/daiwei/.nvm/versions/node/v9.5.0/lib/node_modules/@mindev/min-cli/node_modules/lerna/lib/ChildProcessUtilities.js:59:30)
+10 error     at Function.getCurrentBranch (/Users/daiwei/.nvm/versions/node/v9.5.0/lib/node_modules/@mindev/min-cli/node_modules/lerna/lib/GitUtilities.js:202:59)
+10 error     at Function.isDetachedHead (/Users/daiwei/.nvm/versions/node/v9.5.0/lib/node_modules/@mindev/min-cli/node_modules/lerna/lib/GitUtilities.js:45:37)
+10 error     at PublishCommand.initialize (/Users/daiwei/.nvm/versions/node/v9.5.0/lib/node_modules/@mindev/min-cli/node_modules/lerna/lib/commands/PublishCommand.js:260:36)

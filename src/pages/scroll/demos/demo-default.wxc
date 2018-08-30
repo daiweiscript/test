@@ -1,0 +1,18 @@
+<template>
+  <wxc-scroll></wxc-scroll>
+</template>
+
+<script>
+export default {
+  config: {
+    usingComponents: {
+      'wxc-scroll': 'wxc-scroll'
+    }
+  },
+  data: { },
+  methods: { }
+}
+</script>
+
+<style>
+</style>

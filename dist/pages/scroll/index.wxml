@@ -1,0 +1,9 @@
+<!-- wxp template -->
+<example title="wxc-scroll" desc="scroll" _pid="{{_pid}}">
+
+    <example-demo title="请填写示例名称" desc="请填写示例描述" _pid="{{_pid}}" source="{{__code__.demoDefault}}">
+        <demo-default _pid="{{_pid}}"></demo-default>
+    </example-demo>
+
+    <example-md content="{{__code__.readme}}" _pid="{{_pid}}"></example-md>
+</example>

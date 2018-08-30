@@ -1,8 +1,68 @@
-0 silly argv { _: [ 'bootstrap' ], lernaVersion: '3.2.1', '$0': 'lerna' }
+0 silly argv { _: [ 'publish' ],
+0 silly argv   composed: 'publish',
+0 silly argv   lernaVersion: '3.2.1',
+0 silly argv   '$0': 'lerna' }
 1 notice cli v3.2.1
 2 verbose rootPath /Users/daiwei/Public/practice/lerna
 3 info versioning independent
-4 error JSONError: Unexpected end of JSON input while parsing near '' in packages/pcg1/package.json
-4 error     at module.exports (/Users/daiwei/.nvm/versions/node/v9.5.0/lib/node_modules/lerna/node_modules/parse-json/index.js:26:19)
-4 error     at parse (/Users/daiwei/.nvm/versions/node/v9.5.0/lib/node_modules/lerna/node_modules/load-json-file/index.js:8:29)
-4 error     at pify.then.data (/Users/daiwei/.nvm/versions/node/v9.5.0/lib/node_modules/lerna/node_modules/load-json-file/index.js:10:67)
+4 silly argv { _: [ 'publish' ],
+4 silly argv   composed: 'publish',
+4 silly argv   lernaVersion: '3.2.1',
+4 silly argv   '$0': 'lerna' }
+5 verbose rootPath /Users/daiwei/Public/practice/lerna
+6 silly isAnythingCommitted
+7 verbose isAnythingCommitted 1
+8 silly currentBranch
+9 verbose currentBranch master
+10 silly isBehindUpstream
+11 silly isBehindUpstream master is behind origin/master by 0 commit(s) and ahead by 1
+12 silly hasTags
+13 verbose hasTags true
+14 silly git-describe.sync "undefined@null-1-ga93e160" => {"lastTagName":"undefined@null","lastVersion":"null","refCount":"1","sha":"a93e160","isDirty":false}
+15 info Looking for changed packages since undefined@null
+16 silly diffSinceIn undefined@null packages/pcg1
+17 silly diff packages/pcg1/1.js
+17 silly diff packages/pcg1/package.json
+18 verbose updated undefined
+19 verbose git-describe undefined => "undefined@null-1-ga93e160"
+20 silly git-describe parsed => {"lastTagName":"undefined@null","lastVersion":"null","refCount":"1","sha":"a93e160","isDirty":false}
+21 silly batched [ PackageGraphNode {
+21 silly batched     name: undefined,
+21 silly batched     externalDependencies: Map {},
+21 silly batched     localDependencies: Map {},
+21 silly batched     localDependents: Map {} } ]
+22 silly gitAdd [ '/Users/daiwei/Public/practice/lerna/packages/pcg1/package.json' ]
+23 silly gitCommit Publish
+23 silly gitCommit
+23 silly gitCommit  - undefined@1.0.1
+24 verbose git [ 'commit',
+24 verbose git   '-F',
+24 verbose git   '/private/var/folders/gx/drz33fyn0xx80yrj2fnpywfc0000gn/T/57ba5a53-cf0d-4efe-9380-8de8ada79785/lerna-commit.txt' ]
+25 silly gitTag undefined@1.0.1
+26 verbose git [ 'tag', 'undefined@1.0.1', '-m', 'undefined@1.0.1' ]
+27 info git Pushing tags...
+28 silly gitPush origin master
+29 silly batched [ PackageGraphNode {
+29 silly batched     name: undefined,
+29 silly batched     externalDependencies: Map {},
+29 silly batched     localDependencies: Map {},
+29 silly batched     localDependents: Map {} } ]
+30 info publish Publishing packages to npm...
+31 silly verifyNpmRegistry
+32 silly getExecOpts /Users/daiwei/Public/practice/lerna undefined
+33 silly verifyNpmPackageAccess
+34 silly getExecOpts /Users/daiwei/Public/practice/lerna undefined
+35 warn ENOLICENSE Packages  are missing a license
+36 silly getCurrentSHA
+37 verbose getCurrentSHA b32ca8ef66064726fc87c88375eb6c8e42d2e458
+38 silly getExecOpts /Users/daiwei/Public/practice/lerna undefined
+39 silly exec npm options { cwd: '/Users/daiwei/Public/practice/lerna',
+39 silly exec   env: {},
+39 silly exec   stdio: [ 'ignore', 'pipe', 'inherit' ] }
+40 verbose pack [ undefined ]
+41 silly exec npm [ 'pack', '/Users/daiwei/Public/practice/lerna/packages/pcg1' ]
+42 error Error: Command failed: npm pack /Users/daiwei/Public/practice/lerna/packages/pcg1
+42 error
+42 error     at makeError (/Users/daiwei/.nvm/versions/node/v9.5.0/lib/node_modules/lerna/node_modules/execa/index.js:172:9)
+42 error     at Promise.all.then.arr (/Users/daiwei/.nvm/versions/node/v9.5.0/lib/node_modules/lerna/node_modules/execa/index.js:277:16)
+42 error     at <anonymous>

@@ -1,6 +1,6 @@
 <template>
   <view class="wxc-scroll">
-    <view>WxcScroll Component</view>
+    <view>WxcScroll Component update</view>
   </view>
 </template>
 

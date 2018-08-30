@@ -7,13 +7,83 @@
 6 silly initialize attempt
 7 silly isDetachedHead
 8 silly getCurrentBranch
-9 error initialize caught error
-10 error Error: fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.
-10 error Use '--' to separate paths from revisions, like this:
-10 error 'git <command> [<revision>...] -- [<file>...]'
-10 error
-10 error     at Function.module.exports.sync (/Users/daiwei/.nvm/versions/node/v9.5.0/lib/node_modules/@mindev/min-cli/node_modules/execa/index.js:303:26)
-10 error     at Function.execSync (/Users/daiwei/.nvm/versions/node/v9.5.0/lib/node_modules/@mindev/min-cli/node_modules/lerna/lib/ChildProcessUtilities.js:59:30)
-10 error     at Function.getCurrentBranch (/Users/daiwei/.nvm/versions/node/v9.5.0/lib/node_modules/@mindev/min-cli/node_modules/lerna/lib/GitUtilities.js:202:59)
-10 error     at Function.isDetachedHead (/Users/daiwei/.nvm/versions/node/v9.5.0/lib/node_modules/@mindev/min-cli/node_modules/lerna/lib/GitUtilities.js:45:37)
-10 error     at PublishCommand.initialize (/Users/daiwei/.nvm/versions/node/v9.5.0/lib/node_modules/@mindev/min-cli/node_modules/lerna/lib/commands/PublishCommand.js:260:36)
+9 verbose getCurrentBranch master
+10 verbose isDetachedHead false
+11 silly getCurrentBranch
+12 verbose getCurrentBranch master
+13 silly getUpdates
+14 info Checking for updated packages...
+15 silly hasTags
+16 verbose hasTags false
+17 info Comparing with initial commit.
+18 verbose updated wxc-scroll
+19 info Checking for prereleased packages...
+20 silly collectDependents
+21 silly isPackageDependentOf wxc-scroll wxc-scroll
+22 silly collectUpdates
+23 verbose has filtered update wxc-scroll
+24 silly initialize success
+25 silly execute attempt
+26 silly runScriptSync preversion min
+27 silly runScriptSync preversion wxc-scroll
+28 silly runScriptSync version wxc-scroll
+29 silly runScriptSync version min
+30 silly addFile /Users/daiwei/Public/practice/min/packages/wxc-scroll/package.json
+31 silly commit Publish by MinDev
+31 silly commit
+31 silly commit  - wxc-scroll@1.0.1
+32 verbose commit [ 'commit',
+32 verbose commit   '--no-verify',
+32 verbose commit   '-F',
+32 verbose commit   '/private/var/folders/gx/drz33fyn0xx80yrj2fnpywfc0000gn/T/7ad9ea33-5f33-4e20-a9bb-20baada8a5b7/lerna-commit.txt' ]
+33 silly addTag wxc-scroll@1.0.1
+34 silly runScriptSync postversion wxc-scroll
+35 silly runScriptSync postversion min
+36 info publish Publishing packages to npm...
+37 silly existsSync /Users/daiwei/Public/practice/min/packages/wxc-scroll/scripts/prepublish.js
+38 verbose execScript No prepublish script found at /Users/daiwei/Public/practice/min/packages/wxc-scroll/scripts/prepublish.js
+39 verbose publishing wxc-scroll
+40 silly publishTaggedInDir latest wxc-scroll
+41 silly getExecOpts { cwd: '/Users/daiwei/Public/practice/min/packages/wxc-scroll' }
+42 error publish Retrying failed publish: wxc-scroll
+43 verbose publish error undefined
+44 verbose publishing wxc-scroll
+45 silly publishTaggedInDir latest wxc-scroll
+46 silly getExecOpts { cwd: '/Users/daiwei/Public/practice/min/packages/wxc-scroll' }
+47 error publish Retrying failed publish: wxc-scroll
+48 verbose publish error undefined
+49 verbose publishing wxc-scroll
+50 silly publishTaggedInDir latest wxc-scroll
+51 silly getExecOpts { cwd: '/Users/daiwei/Public/practice/min/packages/wxc-scroll' }
+52 error publish Retrying failed publish: wxc-scroll
+53 verbose publish error undefined
+54 verbose publishing wxc-scroll
+55 silly publishTaggedInDir latest wxc-scroll
+56 silly getExecOpts { cwd: '/Users/daiwei/Public/practice/min/packages/wxc-scroll' }
+57 error publish Retrying failed publish: wxc-scroll
+58 verbose publish error undefined
+59 verbose publishing wxc-scroll
+60 silly publishTaggedInDir latest wxc-scroll
+61 silly getExecOpts { cwd: '/Users/daiwei/Public/practice/min/packages/wxc-scroll' }
+62 error publish Ran out of retries while publishing wxc-scroll Error: Command failed: npm publish --tag latest
+62 error publish npm ERR! code ENEEDAUTH
+62 error publish npm ERR! need auth auth required for publishing
+62 error publish npm ERR! need auth You need to authorize this machine using `npm adduser`
+62 error publish
+62 error publish npm ERR! A complete log of this run can be found in:
+62 error publish npm ERR!     /Users/daiwei/.npm/_logs/2018-08-30T02_53_14_427Z-debug.log
+62 error publish
+62 error publish     at Promise.all.then.arr (/Users/daiwei/.nvm/versions/node/v9.5.0/lib/node_modules/@mindev/min-cli/node_modules/execa/index.js:236:11)
+62 error publish     at <anonymous>
+62 error publish     at process._tickCallback (internal/process/next_tick.js:160:7)
+63 error execute callback with error
+64 error Error: Command failed: npm publish --tag latest
+64 error npm ERR! code ENEEDAUTH
+64 error npm ERR! need auth auth required for publishing
+64 error npm ERR! need auth You need to authorize this machine using `npm adduser`
+64 error
+64 error npm ERR! A complete log of this run can be found in:
+64 error npm ERR!     /Users/daiwei/.npm/_logs/2018-08-30T02_53_14_427Z-debug.log
+64 error
+64 error     at Promise.all.then.arr (/Users/daiwei/.nvm/versions/node/v9.5.0/lib/node_modules/@mindev/min-cli/node_modules/execa/index.js:236:11)
+64 error     at <anonymous>

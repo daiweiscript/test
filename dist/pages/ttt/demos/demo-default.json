@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "wxc-ttt": "../../../packages/wxc-ttt/dist/index"
+  },
+  "component": true
+}

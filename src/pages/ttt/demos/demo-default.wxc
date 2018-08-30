@@ -1,0 +1,18 @@
+<template>
+  <wxc-ttt></wxc-ttt>
+</template>
+
+<script>
+export default {
+  config: {
+    usingComponents: {
+      'wxc-ttt': 'wxc-ttt'
+    }
+  },
+  data: { },
+  methods: { }
+}
+</script>
+
+<style>
+</style>

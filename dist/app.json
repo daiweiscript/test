@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/home/index",
-    "pages/scroll/index"
+    "pages/scroll/index",
+    "pages/ttt/index"
   ],
   "window": {
     "backgroundTextStyle": "dark",

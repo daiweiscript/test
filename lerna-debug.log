@@ -14,76 +14,92 @@
 13 silly getUpdates
 14 info Checking for updated packages...
 15 silly hasTags
-16 verbose hasTags false
-17 info Comparing with initial commit.
-18 verbose updated wxc-scroll
-19 info Checking for prereleased packages...
-20 silly collectDependents
-21 silly isPackageDependentOf wxc-scroll wxc-scroll
-22 silly collectUpdates
-23 verbose has filtered update wxc-scroll
-24 silly initialize success
-25 silly execute attempt
-26 silly runScriptSync preversion min
-27 silly runScriptSync preversion wxc-scroll
-28 silly runScriptSync version wxc-scroll
-29 silly runScriptSync version min
-30 silly addFile /Users/daiwei/Public/practice/min/packages/wxc-scroll/package.json
-31 silly commit Publish by MinDev
-31 silly commit
-31 silly commit  - wxc-scroll@1.0.1
-32 verbose commit [ 'commit',
-32 verbose commit   '--no-verify',
-32 verbose commit   '-F',
-32 verbose commit   '/private/var/folders/gx/drz33fyn0xx80yrj2fnpywfc0000gn/T/7ad9ea33-5f33-4e20-a9bb-20baada8a5b7/lerna-commit.txt' ]
-33 silly addTag wxc-scroll@1.0.1
-34 silly runScriptSync postversion wxc-scroll
-35 silly runScriptSync postversion min
-36 info publish Publishing packages to npm...
-37 silly existsSync /Users/daiwei/Public/practice/min/packages/wxc-scroll/scripts/prepublish.js
-38 verbose execScript No prepublish script found at /Users/daiwei/Public/practice/min/packages/wxc-scroll/scripts/prepublish.js
-39 verbose publishing wxc-scroll
-40 silly publishTaggedInDir latest wxc-scroll
-41 silly getExecOpts { cwd: '/Users/daiwei/Public/practice/min/packages/wxc-scroll' }
-42 error publish Retrying failed publish: wxc-scroll
-43 verbose publish error undefined
-44 verbose publishing wxc-scroll
-45 silly publishTaggedInDir latest wxc-scroll
-46 silly getExecOpts { cwd: '/Users/daiwei/Public/practice/min/packages/wxc-scroll' }
-47 error publish Retrying failed publish: wxc-scroll
-48 verbose publish error undefined
-49 verbose publishing wxc-scroll
-50 silly publishTaggedInDir latest wxc-scroll
-51 silly getExecOpts { cwd: '/Users/daiwei/Public/practice/min/packages/wxc-scroll' }
-52 error publish Retrying failed publish: wxc-scroll
-53 verbose publish error undefined
-54 verbose publishing wxc-scroll
-55 silly publishTaggedInDir latest wxc-scroll
-56 silly getExecOpts { cwd: '/Users/daiwei/Public/practice/min/packages/wxc-scroll' }
-57 error publish Retrying failed publish: wxc-scroll
-58 verbose publish error undefined
-59 verbose publishing wxc-scroll
-60 silly publishTaggedInDir latest wxc-scroll
-61 silly getExecOpts { cwd: '/Users/daiwei/Public/practice/min/packages/wxc-scroll' }
-62 error publish Ran out of retries while publishing wxc-scroll Error: Command failed: npm publish --tag latest
-62 error publish npm ERR! code ENEEDAUTH
-62 error publish npm ERR! need auth auth required for publishing
-62 error publish npm ERR! need auth You need to authorize this machine using `npm adduser`
-62 error publish
-62 error publish npm ERR! A complete log of this run can be found in:
-62 error publish npm ERR!     /Users/daiwei/.npm/_logs/2018-08-30T02_53_14_427Z-debug.log
-62 error publish
-62 error publish     at Promise.all.then.arr (/Users/daiwei/.nvm/versions/node/v9.5.0/lib/node_modules/@mindev/min-cli/node_modules/execa/index.js:236:11)
-62 error publish     at <anonymous>
-62 error publish     at process._tickCallback (internal/process/next_tick.js:160:7)
-63 error execute callback with error
-64 error Error: Command failed: npm publish --tag latest
-64 error npm ERR! code ENEEDAUTH
-64 error npm ERR! need auth auth required for publishing
-64 error npm ERR! need auth You need to authorize this machine using `npm adduser`
-64 error
-64 error npm ERR! A complete log of this run can be found in:
-64 error npm ERR!     /Users/daiwei/.npm/_logs/2018-08-30T02_53_14_427Z-debug.log
-64 error
-64 error     at Promise.all.then.arr (/Users/daiwei/.nvm/versions/node/v9.5.0/lib/node_modules/@mindev/min-cli/node_modules/execa/index.js:236:11)
-64 error     at <anonymous>
+16 verbose hasTags true
+17 silly getLastTag
+18 verbose getLastTag wxc-scroll@1.0.1
+19 info Comparing with wxc-scroll@1.0.1.
+20 silly diffSinceIn wxc-scroll@1.0.1 packages/wxc-scroll
+21 silly diff packages/wxc-scroll/src/index.wxc
+22 verbose updated wxc-scroll
+23 info Checking for prereleased packages...
+24 silly collectDependents
+25 silly isPackageDependentOf wxc-scroll wxc-scroll
+26 silly collectUpdates
+27 verbose has filtered update wxc-scroll
+28 silly initialize success
+29 silly execute attempt
+30 silly runScriptSync preversion min
+31 silly runScriptSync preversion wxc-scroll
+32 silly runScriptSync version wxc-scroll
+33 silly runScriptSync version min
+34 silly addFile /Users/daiwei/Public/practice/min/packages/wxc-scroll/package.json
+35 silly commit Publish by MinDev
+35 silly commit
+35 silly commit  - wxc-scroll@1.0.2
+36 verbose commit [ 'commit',
+36 verbose commit   '--no-verify',
+36 verbose commit   '-F',
+36 verbose commit   '/private/var/folders/gx/drz33fyn0xx80yrj2fnpywfc0000gn/T/e73f4631-425d-420c-8b40-e737d95a2d38/lerna-commit.txt' ]
+37 silly addTag wxc-scroll@1.0.2
+38 silly runScriptSync postversion wxc-scroll
+39 silly runScriptSync postversion min
+40 info publish Publishing packages to npm...
+41 silly existsSync /Users/daiwei/Public/practice/min/packages/wxc-scroll/scripts/prepublish.js
+42 verbose execScript No prepublish script found at /Users/daiwei/Public/practice/min/packages/wxc-scroll/scripts/prepublish.js
+43 verbose publishing wxc-scroll
+44 silly publishTaggedInDir latest wxc-scroll
+45 silly getExecOpts { cwd: '/Users/daiwei/Public/practice/min/packages/wxc-scroll' }
+46 error publish Retrying failed publish: wxc-scroll
+47 verbose publish error undefined
+48 verbose publishing wxc-scroll
+49 silly publishTaggedInDir latest wxc-scroll
+50 silly getExecOpts { cwd: '/Users/daiwei/Public/practice/min/packages/wxc-scroll' }
+51 error publish Retrying failed publish: wxc-scroll
+52 verbose publish error undefined
+53 verbose publishing wxc-scroll
+54 silly publishTaggedInDir latest wxc-scroll
+55 silly getExecOpts { cwd: '/Users/daiwei/Public/practice/min/packages/wxc-scroll' }
+56 error publish Retrying failed publish: wxc-scroll
+57 verbose publish error undefined
+58 verbose publishing wxc-scroll
+59 silly publishTaggedInDir latest wxc-scroll
+60 silly getExecOpts { cwd: '/Users/daiwei/Public/practice/min/packages/wxc-scroll' }
+61 error publish Retrying failed publish: wxc-scroll
+62 verbose publish error undefined
+63 verbose publishing wxc-scroll
+64 silly publishTaggedInDir latest wxc-scroll
+65 silly getExecOpts { cwd: '/Users/daiwei/Public/practice/min/packages/wxc-scroll' }
+66 error publish Ran out of retries while publishing wxc-scroll Error: Command failed: npm publish --tag latest
+66 error publish npm ERR! publish Failed PUT 401
+66 error publish npm ERR! code E401
+66 error publish npm ERR! 404 unauthorized Login first: wxc-scroll
+66 error publish npm ERR! 404
+66 error publish npm ERR! 404  'wxc-scroll' is not in the npm registry.
+66 error publish npm ERR! 404 You should bug the author to publish it (or use the name yourself!)
+66 error publish npm ERR! 404
+66 error publish npm ERR! 404 Note that you can also install from a
+66 error publish npm ERR! 404 tarball, folder, http url, or git url.
+66 error publish
+66 error publish npm ERR! A complete log of this run can be found in:
+66 error publish npm ERR!     /Users/daiwei/.npm/_logs/2018-08-30T02_57_08_365Z-debug.log
+66 error publish
+66 error publish     at Promise.all.then.arr (/Users/daiwei/.nvm/versions/node/v9.5.0/lib/node_modules/@mindev/min-cli/node_modules/execa/index.js:236:11)
+66 error publish     at <anonymous>
+66 error publish     at process._tickCallback (internal/process/next_tick.js:160:7)
+67 error execute callback with error
+68 error Error: Command failed: npm publish --tag latest
+68 error npm ERR! publish Failed PUT 401
+68 error npm ERR! code E401
+68 error npm ERR! 404 unauthorized Login first: wxc-scroll
+68 error npm ERR! 404
+68 error npm ERR! 404  'wxc-scroll' is not in the npm registry.
+68 error npm ERR! 404 You should bug the author to publish it (or use the name yourself!)
+68 error npm ERR! 404
+68 error npm ERR! 404 Note that you can also install from a
+68 error npm ERR! 404 tarball, folder, http url, or git url.
+68 error
+68 error npm ERR! A complete log of this run can be found in:
+68 error npm ERR!     /Users/daiwei/.npm/_logs/2018-08-30T02_57_08_365Z-debug.log
+68 error
+68 error     at Promise.all.then.arr (/Users/daiwei/.nvm/versions/node/v9.5.0/lib/node_modules/@mindev/min-cli/node_modules/execa/index.js:236:11)
+68 error     at <anonymous>

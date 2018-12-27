@@ -1,0 +1,15 @@
+{
+  "name":"video-vip",
+  "alias":["ifree"],
+  "builds":[
+    {"src":"dist/**/**","use":"@now/static"},
+    {"src":"serverless/index.js","use":"@now/node"}
+  ],
+  "routes":[
+    {"src":"/tx/(?<params>.*)","dest":"https://access.video.qq.com/tinyapp/$params"},
+    {"src":"/vip","dest":"https://yun.odflv.com/odflv2/api1.php"},
+    {"src":"http://ugcydzd.qq.com/","headers":{"Host": "ugcydzd.qq.com","Referer":"http://ugcydzd.qq.com/"}}
+    
+  ],
+  "regions":["all"]
+}

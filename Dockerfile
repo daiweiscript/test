@@ -1,10 +1,22 @@
-FROM node:8.12.0-slim
-RUN apt-get update \    && apt-get install -y nginx
+FROM node:9.11.1-alpine
+
+# install simple http server for serving static content
+RUN npm install -g http-server
+
+# make the 'app' folder the current working directory
 WORKDIR /app
-COPY . /app/
-EXPOSE 80
-RUN  npm install 
+
+# copy both 'package.json' and 'package-lock.json' (if available)
+COPY package*.json ./
+
+# install project dependencies
+RUN npm install
+
+# copy project files and folders to the current working directory (i.e. 'app' folder)
+COPY . .
+
+# build app for production with minification
 RUN npm run build
-RUN cp -r dist/* /var/www/html
-RUN rm -rf /app
-CMD ["nginx","-g","daemon off;"]
+
+EXPOSE 8080
+CMD [ "http-server", "dist" ]

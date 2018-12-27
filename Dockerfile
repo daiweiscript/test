@@ -1,4 +1,4 @@
-FROM node:11.6.0-slim
+FROM node:8.12.0-slim
 RUN apt-get update \    
     && apt-get install -y nginx 
 WORKDIR /app

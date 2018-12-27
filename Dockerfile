@@ -1,5 +1,5 @@
 FROM node:11.6.0-slim
-RUN apt-get update \    && apt-get install -y nginx
+RUN apt-get install -y nginx
 WORKDIR /app
 COPY . /app/
 EXPOSE 80
